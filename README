@@ -4,33 +4,33 @@ The goal of Gajim is to provide a full featured and easy to use Jabber
 client. Gajim works nicely with GNOME, but does not require it to run. 
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  libX11_6-1.1.3-1
-  libXss1-1.1.1-1
-  python-2.5.1-3
-  python-dbus-0.82.3-1
-  python-egg-2.19.1-1
-  python-gconf2-2.20.1-1
-  python-gnome2-2.20.1-1
-  python-gnomekeyring-2.20.0-1
-  python-gobject2-2.14.0-1
-  python-gtk2-2.12.0-1
-  python-gtkspell-2.19.1-1
+  cygwin-1.5.25-15
+  libX11_6-1.1.5-1
+  libXss1-1.1.3-1
+  python-2.5.2-4
+  python-dbus-0.83.0-1
+  python-egg-2.19.1-2
+  python-gconf2-2.22.3-1
+  python-gnome2-2.22.3-1
+  python-gnomekeyring-2.24.0-1
+  python-gobject2-2.15.4-1
+  python-gtk2-2.13.0-1
+  python-gtkspell-2.19.1-2
   python-notify-0.1.1-1
+  sox
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  autoconf2.5-2.63-1
+  automake1.9-1.9.6-3
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  intltool-0.36.3-1
-  libtool1.5-1.5.23a-2
+  intltool-0.40.5-1
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical website:
@@ -42,15 +42,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gajim-0.11.4-X-src.tar.bz2
+  unpack gajim-0.12.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gajim-0.11.4-X.cygport all
+  cygport ./gajim-0.12.1-X.cygport all
 
 This will create:
-  /usr/src/gajim-0.11.4-X-src.tar.bz2
-  /usr/src/gajim-0.11.4-X.tar.bz2
+  /usr/src/gajim-0.12.1-X-src.tar.bz2
+  /usr/src/gajim-0.12.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -61,13 +61,93 @@ Files included in the binary package:
   /usr/lib/gajim/idle.dll
   /usr/lib/gajim/idle.la
   /usr/share/applications/gajim.desktop
-  /usr/share/doc/gajim-0.11.4/AUTHORS
-  /usr/share/doc/gajim-0.11.4/COPYING
-  /usr/share/doc/gajim-0.11.4/ChangeLog
-  /usr/share/doc/gajim-0.11.4/INSTALL
-  /usr/share/doc/gajim-0.11.4/README
-  /usr/share/doc/gajim-0.11.4/README.html
-  /usr/share/doc/gajim-0.11.4/THANKS
+  /usr/share/doc/gajim-0.12.1/AUTHORS
+  /usr/share/doc/gajim-0.12.1/COPYING
+  /usr/share/doc/gajim-0.12.1/ChangeLog
+  /usr/share/doc/gajim-0.12.1/INSTALL
+  /usr/share/doc/gajim-0.12.1/README
+  /usr/share/doc/gajim-0.12.1/README.html
+  /usr/share/doc/gajim-0.12.1/THANKS
+  /usr/share/doc/gajim-0.12.1/THANKS.artists
+  /usr/share/gajim/data/activities/default/doing_chores/buying_groceries.png
+  /usr/share/gajim/data/activities/default/doing_chores/category.png
+  /usr/share/gajim/data/activities/default/doing_chores/cleaning.png
+  /usr/share/gajim/data/activities/default/doing_chores/cooking.png
+  /usr/share/gajim/data/activities/default/doing_chores/doing_maintenance.png
+  /usr/share/gajim/data/activities/default/doing_chores/doing_the_dishes.png
+  /usr/share/gajim/data/activities/default/doing_chores/doing_the_laundry.png
+  /usr/share/gajim/data/activities/default/doing_chores/gardening.png
+  /usr/share/gajim/data/activities/default/doing_chores/running_an_errand.png
+  /usr/share/gajim/data/activities/default/doing_chores/walking_the_dog.png
+  /usr/share/gajim/data/activities/default/drinking/category.png
+  /usr/share/gajim/data/activities/default/drinking/having_a_beer.png
+  /usr/share/gajim/data/activities/default/drinking/having_coffee.png
+  /usr/share/gajim/data/activities/default/drinking/having_tea.png
+  /usr/share/gajim/data/activities/default/eating/category.png
+  /usr/share/gajim/data/activities/default/eating/having_a_snack.png
+  /usr/share/gajim/data/activities/default/eating/having_breakfast.png
+  /usr/share/gajim/data/activities/default/eating/having_dinner.png
+  /usr/share/gajim/data/activities/default/eating/having_lunch.png
+  /usr/share/gajim/data/activities/default/exercising/category.png
+  /usr/share/gajim/data/activities/default/exercising/cycling.png
+  /usr/share/gajim/data/activities/default/exercising/dancing.png
+  /usr/share/gajim/data/activities/default/exercising/hiking.png
+  /usr/share/gajim/data/activities/default/exercising/jogging.png
+  /usr/share/gajim/data/activities/default/exercising/playing_sports.png
+  /usr/share/gajim/data/activities/default/exercising/running.png
+  /usr/share/gajim/data/activities/default/exercising/skiing.png
+  /usr/share/gajim/data/activities/default/exercising/swimming.png
+  /usr/share/gajim/data/activities/default/exercising/working_out.png
+  /usr/share/gajim/data/activities/default/grooming/at_the_spa.png
+  /usr/share/gajim/data/activities/default/grooming/brushing_teeth.png
+  /usr/share/gajim/data/activities/default/grooming/category.png
+  /usr/share/gajim/data/activities/default/grooming/getting_a_haircut.png
+  /usr/share/gajim/data/activities/default/grooming/shaving.png
+  /usr/share/gajim/data/activities/default/grooming/taking_a_bath.png
+  /usr/share/gajim/data/activities/default/grooming/taking_a_shower.png
+  /usr/share/gajim/data/activities/default/having_appointment/category.png
+  /usr/share/gajim/data/activities/default/inactive/category.png
+  /usr/share/gajim/data/activities/default/inactive/day_off.png
+  /usr/share/gajim/data/activities/default/inactive/hanging_out.png
+  /usr/share/gajim/data/activities/default/inactive/hiding.png
+  /usr/share/gajim/data/activities/default/inactive/on_vacation.png
+  /usr/share/gajim/data/activities/default/inactive/praying.png
+  /usr/share/gajim/data/activities/default/inactive/scheduled_holiday.png
+  /usr/share/gajim/data/activities/default/inactive/sleeping.png
+  /usr/share/gajim/data/activities/default/inactive/thinking.png
+  /usr/share/gajim/data/activities/default/relaxing/category.png
+  /usr/share/gajim/data/activities/default/relaxing/fishing.png
+  /usr/share/gajim/data/activities/default/relaxing/gaming.png
+  /usr/share/gajim/data/activities/default/relaxing/going_out.png
+  /usr/share/gajim/data/activities/default/relaxing/partying.png
+  /usr/share/gajim/data/activities/default/relaxing/reading.png
+  /usr/share/gajim/data/activities/default/relaxing/rehearsing.png
+  /usr/share/gajim/data/activities/default/relaxing/shopping.png
+  /usr/share/gajim/data/activities/default/relaxing/smoking.png
+  /usr/share/gajim/data/activities/default/relaxing/socializing.png
+  /usr/share/gajim/data/activities/default/relaxing/sunbathing.png
+  /usr/share/gajim/data/activities/default/relaxing/watching_a_movie.png
+  /usr/share/gajim/data/activities/default/relaxing/watching_tv.png
+  /usr/share/gajim/data/activities/default/talking/category.png
+  /usr/share/gajim/data/activities/default/talking/in_real_life.png
+  /usr/share/gajim/data/activities/default/talking/on_the_phone.png
+  /usr/share/gajim/data/activities/default/talking/on_video_phone.png
+  /usr/share/gajim/data/activities/default/traveling/category.png
+  /usr/share/gajim/data/activities/default/traveling/commuting.png
+  /usr/share/gajim/data/activities/default/traveling/cycling.png
+  /usr/share/gajim/data/activities/default/traveling/driving.png
+  /usr/share/gajim/data/activities/default/traveling/in_a_car.png
+  /usr/share/gajim/data/activities/default/traveling/on_a_bus.png
+  /usr/share/gajim/data/activities/default/traveling/on_a_plane.png
+  /usr/share/gajim/data/activities/default/traveling/on_a_train.png
+  /usr/share/gajim/data/activities/default/traveling/on_a_trip.png
+  /usr/share/gajim/data/activities/default/traveling/walking.png
+  /usr/share/gajim/data/activities/default/unknown/category.png
+  /usr/share/gajim/data/activities/default/working/category.png
+  /usr/share/gajim/data/activities/default/working/coding.png
+  /usr/share/gajim/data/activities/default/working/in_a_meeting.png
+  /usr/share/gajim/data/activities/default/working/studying.png
+  /usr/share/gajim/data/activities/default/working/writing.png
   /usr/share/gajim/data/emoticons/animated/angry.png
   /usr/share/gajim/data/emoticons/animated/bat.gif
   /usr/share/gajim/data/emoticons/animated/beer.png
@@ -103,6 +183,7 @@ Files included in the binary package:
   /usr/share/gajim/data/emoticons/animated/party.gif
   /usr/share/gajim/data/emoticons/animated/phone.png
   /usr/share/gajim/data/emoticons/animated/photo.png
+  /usr/share/gajim/data/emoticons/animated/puke.gif
   /usr/share/gajim/data/emoticons/animated/pussy.png
   /usr/share/gajim/data/emoticons/animated/rainbow.png
   /usr/share/gajim/data/emoticons/animated/sleepy.gif
@@ -138,12 +219,14 @@ Files included in the binary package:
   /usr/share/gajim/data/emoticons/static-big/hugright.png
   /usr/share/gajim/data/emoticons/static-big/kiss.png
   /usr/share/gajim/data/emoticons/static-big/lamp.png
+  /usr/share/gajim/data/emoticons/static-big/lion.png
   /usr/share/gajim/data/emoticons/static-big/mail.png
   /usr/share/gajim/data/emoticons/static-big/moon.png
   /usr/share/gajim/data/emoticons/static-big/music.png
   /usr/share/gajim/data/emoticons/static-big/oh.png
   /usr/share/gajim/data/emoticons/static-big/phone.png
   /usr/share/gajim/data/emoticons/static-big/photo.png
+  /usr/share/gajim/data/emoticons/static-big/puke.png
   /usr/share/gajim/data/emoticons/static-big/pussy.png
   /usr/share/gajim/data/emoticons/static-big/rainbow.png
   /usr/share/gajim/data/emoticons/static-big/smile.png
@@ -177,12 +260,14 @@ Files included in the binary package:
   /usr/share/gajim/data/emoticons/static/hugright.png
   /usr/share/gajim/data/emoticons/static/kiss.png
   /usr/share/gajim/data/emoticons/static/lamp.png
+  /usr/share/gajim/data/emoticons/static/lion.png
   /usr/share/gajim/data/emoticons/static/mail.png
   /usr/share/gajim/data/emoticons/static/moon.png
   /usr/share/gajim/data/emoticons/static/music.png
   /usr/share/gajim/data/emoticons/static/oh.png
   /usr/share/gajim/data/emoticons/static/phone.png
   /usr/share/gajim/data/emoticons/static/photo.png
+  /usr/share/gajim/data/emoticons/static/puke.png
   /usr/share/gajim/data/emoticons/static/pussy.png
   /usr/share/gajim/data/emoticons/static/rainbow.png
   /usr/share/gajim/data/emoticons/static/smile.png
@@ -203,13 +288,20 @@ Files included in the binary package:
   /usr/share/gajim/data/glade/advanced_menuitem_menu.glade
   /usr/share/gajim/data/glade/advanced_notifications_window.glade
   /usr/share/gajim/data/glade/atom_entry_window.glade
+  /usr/share/gajim/data/glade/blocked_contacts_window.glade
+  /usr/share/gajim/data/glade/change_activity_dialog.glade
+  /usr/share/gajim/data/glade/change_mood_dialog.glade
   /usr/share/gajim/data/glade/change_password_dialog.glade
   /usr/share/gajim/data/glade/change_status_message_dialog.glade
   /usr/share/gajim/data/glade/chat_context_menu.glade
   /usr/share/gajim/data/glade/chat_control_popup_menu.glade
+  /usr/share/gajim/data/glade/chat_to_muc_window.glade
   /usr/share/gajim/data/glade/choose_gpg_key_dialog.glade
   /usr/share/gajim/data/glade/data_form_window.glade
+  /usr/share/gajim/data/glade/dubbleinput_dialog.glade
   /usr/share/gajim/data/glade/edit_groups_dialog.glade
+  /usr/share/gajim/data/glade/esession_info_window.glade
+  /usr/share/gajim/data/glade/features_window.glade
   /usr/share/gajim/data/glade/filetransfers.glade
   /usr/share/gajim/data/glade/gajim_themes_window.glade
   /usr/share/gajim/data/glade/gc_control_popup_menu.glade
@@ -218,10 +310,11 @@ Files included in the binary package:
   /usr/share/gajim/data/glade/history_manager.glade
   /usr/share/gajim/data/glade/history_window.glade
   /usr/share/gajim/data/glade/input_dialog.glade
-  /usr/share/gajim/data/glade/invitation_received_dialog.glade
+  /usr/share/gajim/data/glade/input_text_dialog.glade
   /usr/share/gajim/data/glade/join_groupchat_window.glade
   /usr/share/gajim/data/glade/manage_accounts_window.glade
   /usr/share/gajim/data/glade/manage_bookmarks_window.glade
+  /usr/share/gajim/data/glade/manage_pep_services_window.glade
   /usr/share/gajim/data/glade/manage_proxies_window.glade
   /usr/share/gajim/data/glade/message_window.glade
   /usr/share/gajim/data/glade/passphrase_dialog.glade
@@ -234,11 +327,14 @@ Files included in the binary package:
   /usr/share/gajim/data/glade/remove_account_window.glade
   /usr/share/gajim/data/glade/roster_contact_context_menu.glade
   /usr/share/gajim/data/glade/roster_window.glade
+  /usr/share/gajim/data/glade/search_window.glade
   /usr/share/gajim/data/glade/service_discovery_window.glade
   /usr/share/gajim/data/glade/service_registration_window.glade
   /usr/share/gajim/data/glade/single_message_window.glade
   /usr/share/gajim/data/glade/subscription_request_popup_menu.glade
   /usr/share/gajim/data/glade/subscription_request_window.glade
+  /usr/share/gajim/data/glade/synchronise_select_account_dialog.glade
+  /usr/share/gajim/data/glade/synchronise_select_contacts_dialog.glade
   /usr/share/gajim/data/glade/systray_context_menu.glade
   /usr/share/gajim/data/glade/vcard_information_window.glade
   /usr/share/gajim/data/glade/xml_console_window.glade
@@ -252,8 +348,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/crystal/16x16/connecting.gif
   /usr/share/gajim/data/iconsets/crystal/16x16/dnd.png
   /usr/share/gajim/data/iconsets/crystal/16x16/error.png
+  /usr/share/gajim/data/iconsets/crystal/16x16/event.gif
   /usr/share/gajim/data/iconsets/crystal/16x16/invisible.png
-  /usr/share/gajim/data/iconsets/crystal/16x16/message.gif
   /usr/share/gajim/data/iconsets/crystal/16x16/muc_active.png
   /usr/share/gajim/data/iconsets/crystal/16x16/muc_inactive.png
   /usr/share/gajim/data/iconsets/crystal/16x16/not_in_roster.png
@@ -262,6 +358,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/crystal/16x16/opened.png
   /usr/share/gajim/data/iconsets/crystal/16x16/requested.png
   /usr/share/gajim/data/iconsets/crystal/16x16/xa.png
+  /usr/share/gajim/data/iconsets/crystal/32x32/muc_active.png
+  /usr/share/gajim/data/iconsets/crystal/32x32/muc_inactive.png
   /usr/share/gajim/data/iconsets/crystal/48x48/offline.png
   /usr/share/gajim/data/iconsets/crystal/48x48/online.png
   /usr/share/gajim/data/iconsets/dcraven/16x16/away.png
@@ -270,8 +368,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/dcraven/16x16/connecting.png
   /usr/share/gajim/data/iconsets/dcraven/16x16/dnd.png
   /usr/share/gajim/data/iconsets/dcraven/16x16/error.png
+  /usr/share/gajim/data/iconsets/dcraven/16x16/event.png
   /usr/share/gajim/data/iconsets/dcraven/16x16/invisible.png
-  /usr/share/gajim/data/iconsets/dcraven/16x16/message.png
   /usr/share/gajim/data/iconsets/dcraven/16x16/muc_active.png
   /usr/share/gajim/data/iconsets/dcraven/16x16/muc_inactive.png
   /usr/share/gajim/data/iconsets/dcraven/16x16/not_in_roster.png
@@ -286,8 +384,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/dcraven/32x32/connecting.png
   /usr/share/gajim/data/iconsets/dcraven/32x32/dnd.png
   /usr/share/gajim/data/iconsets/dcraven/32x32/error.png
+  /usr/share/gajim/data/iconsets/dcraven/32x32/event.png
   /usr/share/gajim/data/iconsets/dcraven/32x32/invisible.png
-  /usr/share/gajim/data/iconsets/dcraven/32x32/message.png
   /usr/share/gajim/data/iconsets/dcraven/32x32/muc_active.png
   /usr/share/gajim/data/iconsets/dcraven/32x32/muc_inactive.png
   /usr/share/gajim/data/iconsets/dcraven/32x32/not_in_roster.png
@@ -304,8 +402,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/gnome/16x16/connecting.gif
   /usr/share/gajim/data/iconsets/gnome/16x16/dnd.png
   /usr/share/gajim/data/iconsets/gnome/16x16/error.png
+  /usr/share/gajim/data/iconsets/gnome/16x16/event.gif
   /usr/share/gajim/data/iconsets/gnome/16x16/invisible.png
-  /usr/share/gajim/data/iconsets/gnome/16x16/message.gif
   /usr/share/gajim/data/iconsets/gnome/16x16/muc_active.png
   /usr/share/gajim/data/iconsets/gnome/16x16/muc_inactive.png
   /usr/share/gajim/data/iconsets/gnome/16x16/not_in_roster.png
@@ -332,8 +430,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/goojim/16x16/connecting.png
   /usr/share/gajim/data/iconsets/goojim/16x16/dnd.png
   /usr/share/gajim/data/iconsets/goojim/16x16/error.png
+  /usr/share/gajim/data/iconsets/goojim/16x16/event.png
   /usr/share/gajim/data/iconsets/goojim/16x16/invisible.png
-  /usr/share/gajim/data/iconsets/goojim/16x16/message.png
   /usr/share/gajim/data/iconsets/goojim/16x16/muc_active.png
   /usr/share/gajim/data/iconsets/goojim/16x16/muc_inactive.png
   /usr/share/gajim/data/iconsets/goojim/16x16/not_in_the_roster.png
@@ -348,8 +446,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/goojim/32x32/connecting.png
   /usr/share/gajim/data/iconsets/goojim/32x32/dnd.png
   /usr/share/gajim/data/iconsets/goojim/32x32/error.png
+  /usr/share/gajim/data/iconsets/goojim/32x32/event.png
   /usr/share/gajim/data/iconsets/goojim/32x32/invisible.png
-  /usr/share/gajim/data/iconsets/goojim/32x32/message.png
   /usr/share/gajim/data/iconsets/goojim/32x32/muc_active.png
   /usr/share/gajim/data/iconsets/goojim/32x32/muc_inactive.png
   /usr/share/gajim/data/iconsets/goojim/32x32/not_in_the_roster.png
@@ -366,8 +464,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/gossip/16x16/connecting.gif
   /usr/share/gajim/data/iconsets/gossip/16x16/dnd.png
   /usr/share/gajim/data/iconsets/gossip/16x16/error.png
+  /usr/share/gajim/data/iconsets/gossip/16x16/event.png
   /usr/share/gajim/data/iconsets/gossip/16x16/invisible.png
-  /usr/share/gajim/data/iconsets/gossip/16x16/message.png
   /usr/share/gajim/data/iconsets/gossip/16x16/muc_active.png
   /usr/share/gajim/data/iconsets/gossip/16x16/muc_inactive.png
   /usr/share/gajim/data/iconsets/gossip/16x16/not_in_roster.png
@@ -376,6 +474,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/gossip/16x16/opened.png
   /usr/share/gajim/data/iconsets/gossip/16x16/requested.png
   /usr/share/gajim/data/iconsets/gossip/16x16/xa.png
+  /usr/share/gajim/data/iconsets/gossip/32x32/muc_active.png
+  /usr/share/gajim/data/iconsets/gossip/32x32/muc_inactive.png
   /usr/share/gajim/data/iconsets/gossip/48x48/offline.png
   /usr/share/gajim/data/iconsets/gossip/48x48/online.png
   /usr/share/gajim/data/iconsets/gota/16x16/away.png
@@ -384,8 +484,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/gota/16x16/connecting.gif
   /usr/share/gajim/data/iconsets/gota/16x16/dnd.png
   /usr/share/gajim/data/iconsets/gota/16x16/error.png
+  /usr/share/gajim/data/iconsets/gota/16x16/event.gif
   /usr/share/gajim/data/iconsets/gota/16x16/invisible.png
-  /usr/share/gajim/data/iconsets/gota/16x16/message.gif
   /usr/share/gajim/data/iconsets/gota/16x16/muc_active.png
   /usr/share/gajim/data/iconsets/gota/16x16/muc_inactive.png
   /usr/share/gajim/data/iconsets/gota/16x16/not_in_roster.png
@@ -400,8 +500,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/gota/32x32/connecting.gif
   /usr/share/gajim/data/iconsets/gota/32x32/dnd.png
   /usr/share/gajim/data/iconsets/gota/32x32/error.png
+  /usr/share/gajim/data/iconsets/gota/32x32/event.gif
   /usr/share/gajim/data/iconsets/gota/32x32/invisible.png
-  /usr/share/gajim/data/iconsets/gota/32x32/message.gif
   /usr/share/gajim/data/iconsets/gota/32x32/muc_active.png
   /usr/share/gajim/data/iconsets/gota/32x32/muc_inactive.png
   /usr/share/gajim/data/iconsets/gota/32x32/not_in_roster.png
@@ -418,8 +518,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/jabberbulb/16x16/connecting.png
   /usr/share/gajim/data/iconsets/jabberbulb/16x16/dnd.png
   /usr/share/gajim/data/iconsets/jabberbulb/16x16/error.png
+  /usr/share/gajim/data/iconsets/jabberbulb/16x16/event.gif
   /usr/share/gajim/data/iconsets/jabberbulb/16x16/invisible.png
-  /usr/share/gajim/data/iconsets/jabberbulb/16x16/message.gif
   /usr/share/gajim/data/iconsets/jabberbulb/16x16/muc_active.png
   /usr/share/gajim/data/iconsets/jabberbulb/16x16/muc_inactive.png
   /usr/share/gajim/data/iconsets/jabberbulb/16x16/not_in_roster.png
@@ -448,8 +548,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/nuvola/16x16/connecting.png
   /usr/share/gajim/data/iconsets/nuvola/16x16/dnd.png
   /usr/share/gajim/data/iconsets/nuvola/16x16/error.png
+  /usr/share/gajim/data/iconsets/nuvola/16x16/event.gif
   /usr/share/gajim/data/iconsets/nuvola/16x16/invisible.png
-  /usr/share/gajim/data/iconsets/nuvola/16x16/message.gif
   /usr/share/gajim/data/iconsets/nuvola/16x16/muc_active.png
   /usr/share/gajim/data/iconsets/nuvola/16x16/muc_inactive.png
   /usr/share/gajim/data/iconsets/nuvola/16x16/not_in_roster.png
@@ -458,6 +558,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/nuvola/16x16/opened.png
   /usr/share/gajim/data/iconsets/nuvola/16x16/requested.png
   /usr/share/gajim/data/iconsets/nuvola/16x16/xa.png
+  /usr/share/gajim/data/iconsets/nuvola/32x32/muc_active.png
+  /usr/share/gajim/data/iconsets/nuvola/32x32/muc_inactive.png
   /usr/share/gajim/data/iconsets/nuvola/48x48/offline.png
   /usr/share/gajim/data/iconsets/nuvola/48x48/online.png
   /usr/share/gajim/data/iconsets/simplebulb/16x16/away.png
@@ -466,8 +568,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/simplebulb/16x16/connecting.png
   /usr/share/gajim/data/iconsets/simplebulb/16x16/dnd.png
   /usr/share/gajim/data/iconsets/simplebulb/16x16/error.png
+  /usr/share/gajim/data/iconsets/simplebulb/16x16/event.png
   /usr/share/gajim/data/iconsets/simplebulb/16x16/invisible.png
-  /usr/share/gajim/data/iconsets/simplebulb/16x16/message.png
   /usr/share/gajim/data/iconsets/simplebulb/16x16/muc_active.png
   /usr/share/gajim/data/iconsets/simplebulb/16x16/muc_inactive.png
   /usr/share/gajim/data/iconsets/simplebulb/16x16/not_in_roster.png
@@ -476,6 +578,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/simplebulb/16x16/opened.png
   /usr/share/gajim/data/iconsets/simplebulb/16x16/requested.png
   /usr/share/gajim/data/iconsets/simplebulb/16x16/xa.png
+  /usr/share/gajim/data/iconsets/simplebulb/32x32/muc_active.png
+  /usr/share/gajim/data/iconsets/simplebulb/32x32/muc_inactive.png
   /usr/share/gajim/data/iconsets/simplebulb/48x48/offline.png
   /usr/share/gajim/data/iconsets/simplebulb/48x48/online.png
   /usr/share/gajim/data/iconsets/stellar/16x16/away.png
@@ -484,8 +588,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/stellar/16x16/connecting.gif
   /usr/share/gajim/data/iconsets/stellar/16x16/dnd.png
   /usr/share/gajim/data/iconsets/stellar/16x16/error.png
+  /usr/share/gajim/data/iconsets/stellar/16x16/event.gif
   /usr/share/gajim/data/iconsets/stellar/16x16/invisible.png
-  /usr/share/gajim/data/iconsets/stellar/16x16/message.gif
   /usr/share/gajim/data/iconsets/stellar/16x16/muc_active.png
   /usr/share/gajim/data/iconsets/stellar/16x16/muc_inactive.png
   /usr/share/gajim/data/iconsets/stellar/16x16/not_in_roster.png
@@ -494,6 +598,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/stellar/16x16/opened.png
   /usr/share/gajim/data/iconsets/stellar/16x16/requested.png
   /usr/share/gajim/data/iconsets/stellar/16x16/xa.png
+  /usr/share/gajim/data/iconsets/stellar/32x32/muc_active.png
+  /usr/share/gajim/data/iconsets/stellar/32x32/muc_inactive.png
   /usr/share/gajim/data/iconsets/stellar/48x48/offline.png
   /usr/share/gajim/data/iconsets/stellar/48x48/online.png
   /usr/share/gajim/data/iconsets/sun/16x16/away.png
@@ -502,8 +608,8 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/sun/16x16/connecting.gif
   /usr/share/gajim/data/iconsets/sun/16x16/dnd.png
   /usr/share/gajim/data/iconsets/sun/16x16/error.png
+  /usr/share/gajim/data/iconsets/sun/16x16/event.gif
   /usr/share/gajim/data/iconsets/sun/16x16/invisible.png
-  /usr/share/gajim/data/iconsets/sun/16x16/message.gif
   /usr/share/gajim/data/iconsets/sun/16x16/muc_active.png
   /usr/share/gajim/data/iconsets/sun/16x16/muc_inactive.png
   /usr/share/gajim/data/iconsets/sun/16x16/not_in_roster.png
@@ -590,6 +696,22 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/transports/irc/32x32/offline.png
   /usr/share/gajim/data/iconsets/transports/irc/32x32/online.png
   /usr/share/gajim/data/iconsets/transports/irc/32x32/xa.png
+  /usr/share/gajim/data/iconsets/transports/mrim/16x16/away.png
+  /usr/share/gajim/data/iconsets/transports/mrim/16x16/chat.png
+  /usr/share/gajim/data/iconsets/transports/mrim/16x16/dnd.png
+  /usr/share/gajim/data/iconsets/transports/mrim/16x16/not_in_roster.png
+  /usr/share/gajim/data/iconsets/transports/mrim/16x16/offline.png
+  /usr/share/gajim/data/iconsets/transports/mrim/16x16/online.png
+  /usr/share/gajim/data/iconsets/transports/mrim/16x16/xa.png
+  /usr/share/gajim/data/iconsets/transports/mrim/32x32/away.png
+  /usr/share/gajim/data/iconsets/transports/mrim/32x32/chat.png
+  /usr/share/gajim/data/iconsets/transports/mrim/32x32/dnd.png
+  /usr/share/gajim/data/iconsets/transports/mrim/32x32/not_in_roster.png
+  /usr/share/gajim/data/iconsets/transports/mrim/32x32/offline.png
+  /usr/share/gajim/data/iconsets/transports/mrim/32x32/online.png
+  /usr/share/gajim/data/iconsets/transports/mrim/32x32/xa.png
+  /usr/share/gajim/data/iconsets/transports/mrim/48x48/offline.png
+  /usr/share/gajim/data/iconsets/transports/mrim/48x48/online.png
   /usr/share/gajim/data/iconsets/transports/msn/16x16/away.png
   /usr/share/gajim/data/iconsets/transports/msn/16x16/chat.png
   /usr/share/gajim/data/iconsets/transports/msn/16x16/dnd.png
@@ -662,6 +784,92 @@ Files included in the binary package:
   /usr/share/gajim/data/iconsets/transports/yahoo/32x32/xa.png
   /usr/share/gajim/data/iconsets/transports/yahoo/48x48/offline.png
   /usr/share/gajim/data/iconsets/transports/yahoo/48x48/online.png
+  /usr/share/gajim/data/moods/default/afraid.png
+  /usr/share/gajim/data/moods/default/amazed.png
+  /usr/share/gajim/data/moods/default/amorous.png
+  /usr/share/gajim/data/moods/default/angry.png
+  /usr/share/gajim/data/moods/default/annoyed.png
+  /usr/share/gajim/data/moods/default/anxious.png
+  /usr/share/gajim/data/moods/default/aroused.png
+  /usr/share/gajim/data/moods/default/ashamed.png
+  /usr/share/gajim/data/moods/default/bored.png
+  /usr/share/gajim/data/moods/default/brave.png
+  /usr/share/gajim/data/moods/default/calm.png
+  /usr/share/gajim/data/moods/default/cautious.png
+  /usr/share/gajim/data/moods/default/cold.png
+  /usr/share/gajim/data/moods/default/confident.png
+  /usr/share/gajim/data/moods/default/confused.png
+  /usr/share/gajim/data/moods/default/contemplative.png
+  /usr/share/gajim/data/moods/default/contented.png
+  /usr/share/gajim/data/moods/default/cranky.png
+  /usr/share/gajim/data/moods/default/crazy.png
+  /usr/share/gajim/data/moods/default/creative.png
+  /usr/share/gajim/data/moods/default/curious.png
+  /usr/share/gajim/data/moods/default/dejected.png
+  /usr/share/gajim/data/moods/default/depressed.png
+  /usr/share/gajim/data/moods/default/disappointed.png
+  /usr/share/gajim/data/moods/default/disgusted.png
+  /usr/share/gajim/data/moods/default/dismayed.png
+  /usr/share/gajim/data/moods/default/distracted.png
+  /usr/share/gajim/data/moods/default/embarrassed.png
+  /usr/share/gajim/data/moods/default/envious.png
+  /usr/share/gajim/data/moods/default/excited.png
+  /usr/share/gajim/data/moods/default/flirtatious.png
+  /usr/share/gajim/data/moods/default/frustrated.png
+  /usr/share/gajim/data/moods/default/grateful.png
+  /usr/share/gajim/data/moods/default/grieving.png
+  /usr/share/gajim/data/moods/default/grumpy.png
+  /usr/share/gajim/data/moods/default/guilty.png
+  /usr/share/gajim/data/moods/default/happy.png
+  /usr/share/gajim/data/moods/default/hopeful.png
+  /usr/share/gajim/data/moods/default/hot.png
+  /usr/share/gajim/data/moods/default/humbled.png
+  /usr/share/gajim/data/moods/default/humiliated.png
+  /usr/share/gajim/data/moods/default/hungry.png
+  /usr/share/gajim/data/moods/default/hurt.png
+  /usr/share/gajim/data/moods/default/impressed.png
+  /usr/share/gajim/data/moods/default/in_awe.png
+  /usr/share/gajim/data/moods/default/in_love.png
+  /usr/share/gajim/data/moods/default/indignant.png
+  /usr/share/gajim/data/moods/default/interested.png
+  /usr/share/gajim/data/moods/default/intoxicated.png
+  /usr/share/gajim/data/moods/default/invincible.png
+  /usr/share/gajim/data/moods/default/jealous.png
+  /usr/share/gajim/data/moods/default/lonely.png
+  /usr/share/gajim/data/moods/default/lost.png
+  /usr/share/gajim/data/moods/default/lucky.png
+  /usr/share/gajim/data/moods/default/mean.png
+  /usr/share/gajim/data/moods/default/moody.png
+  /usr/share/gajim/data/moods/default/nervous.png
+  /usr/share/gajim/data/moods/default/neutral.png
+  /usr/share/gajim/data/moods/default/offended.png
+  /usr/share/gajim/data/moods/default/outraged.png
+  /usr/share/gajim/data/moods/default/playful.png
+  /usr/share/gajim/data/moods/default/proud.png
+  /usr/share/gajim/data/moods/default/relaxed.png
+  /usr/share/gajim/data/moods/default/relieved.png
+  /usr/share/gajim/data/moods/default/remorseful.png
+  /usr/share/gajim/data/moods/default/restless.png
+  /usr/share/gajim/data/moods/default/sad.png
+  /usr/share/gajim/data/moods/default/sarcastic.png
+  /usr/share/gajim/data/moods/default/satisfied.png
+  /usr/share/gajim/data/moods/default/serious.png
+  /usr/share/gajim/data/moods/default/shocked.png
+  /usr/share/gajim/data/moods/default/shy.png
+  /usr/share/gajim/data/moods/default/sick.png
+  /usr/share/gajim/data/moods/default/sleepy.png
+  /usr/share/gajim/data/moods/default/spontaneous.png
+  /usr/share/gajim/data/moods/default/stressed.png
+  /usr/share/gajim/data/moods/default/strong.png
+  /usr/share/gajim/data/moods/default/surprised.png
+  /usr/share/gajim/data/moods/default/thankful.png
+  /usr/share/gajim/data/moods/default/thirsty.png
+  /usr/share/gajim/data/moods/default/tired.png
+  /usr/share/gajim/data/moods/default/undefined.png
+  /usr/share/gajim/data/moods/default/unknown.png
+  /usr/share/gajim/data/moods/default/weak.png
+  /usr/share/gajim/data/moods/default/worried.png
+  /usr/share/gajim/data/other/cacerts.pem
   /usr/share/gajim/data/other/servers.xml
   /usr/share/gajim/data/pixmaps/agents/aim.png
   /usr/share/gajim/data/pixmaps/agents/bytestreams.png
@@ -675,6 +883,7 @@ Files included in the binary package:
   /usr/share/gajim/data/pixmaps/agents/jabber.png
   /usr/share/gajim/data/pixmaps/agents/jud.png
   /usr/share/gajim/data/pixmaps/agents/mail.png
+  /usr/share/gajim/data/pixmaps/agents/mrim.png
   /usr/share/gajim/data/pixmaps/agents/msn.png
   /usr/share/gajim/data/pixmaps/agents/pubsub.png
   /usr/share/gajim/data/pixmaps/agents/rss.png
@@ -699,6 +908,12 @@ Files included in the binary package:
   /usr/share/gajim/data/pixmaps/kbd_input.png
   /usr/share/gajim/data/pixmaps/muc_separator.png
   /usr/share/gajim/data/pixmaps/person.png
+  /usr/share/gajim/data/pixmaps/receipt_missing.png
+  /usr/share/gajim/data/pixmaps/security-high-big.png
+  /usr/share/gajim/data/pixmaps/security-high.png
+  /usr/share/gajim/data/pixmaps/security-low-big.png
+  /usr/share/gajim/data/pixmaps/security-low.png
+  /usr/share/gajim/data/pixmaps/upload.png
   /usr/share/gajim/data/sounds/bounce.wav
   /usr/share/gajim/data/sounds/connected.wav
   /usr/share/gajim/data/sounds/disconnected.wav
@@ -734,6 +949,9 @@ Files included in the binary package:
   /usr/share/gajim/src/common/atom.py
   /usr/share/gajim/src/common/atom.pyc
   /usr/share/gajim/src/common/atom.pyo
+  /usr/share/gajim/src/common/caps.py
+  /usr/share/gajim/src/common/caps.pyc
+  /usr/share/gajim/src/common/caps.pyo
   /usr/share/gajim/src/common/check_paths.py
   /usr/share/gajim/src/common/check_paths.pyc
   /usr/share/gajim/src/common/check_paths.pyo
@@ -755,6 +973,9 @@ Files included in the binary package:
   /usr/share/gajim/src/common/contacts.py
   /usr/share/gajim/src/common/contacts.pyc
   /usr/share/gajim/src/common/contacts.pyo
+  /usr/share/gajim/src/common/crypto.py
+  /usr/share/gajim/src/common/crypto.pyc
+  /usr/share/gajim/src/common/crypto.pyo
   /usr/share/gajim/src/common/dataforms.py
   /usr/share/gajim/src/common/dataforms.pyc
   /usr/share/gajim/src/common/dataforms.pyo
@@ -764,6 +985,9 @@ Files included in the binary package:
   /usr/share/gajim/src/common/defs.py
   /usr/share/gajim/src/common/defs.pyc
   /usr/share/gajim/src/common/defs.pyo
+  /usr/share/gajim/src/common/dh.py
+  /usr/share/gajim/src/common/dh.pyc
+  /usr/share/gajim/src/common/dh.pyo
   /usr/share/gajim/src/common/events.py
   /usr/share/gajim/src/common/events.pyc
   /usr/share/gajim/src/common/events.pyo
@@ -794,6 +1018,9 @@ Files included in the binary package:
   /usr/share/gajim/src/common/passwords.py
   /usr/share/gajim/src/common/passwords.pyc
   /usr/share/gajim/src/common/passwords.pyo
+  /usr/share/gajim/src/common/pep.py
+  /usr/share/gajim/src/common/pep.pyc
+  /usr/share/gajim/src/common/pep.pyo
   /usr/share/gajim/src/common/proxy65_manager.py
   /usr/share/gajim/src/common/proxy65_manager.pyc
   /usr/share/gajim/src/common/proxy65_manager.pyo
@@ -809,6 +1036,9 @@ Files included in the binary package:
   /usr/share/gajim/src/common/socks5.py
   /usr/share/gajim/src/common/socks5.pyc
   /usr/share/gajim/src/common/socks5.pyo
+  /usr/share/gajim/src/common/stanza_session.py
+  /usr/share/gajim/src/common/stanza_session.pyc
+  /usr/share/gajim/src/common/stanza_session.pyo
   /usr/share/gajim/src/common/xmpp/__init__.py
   /usr/share/gajim/src/common/xmpp/__init__.pyc
   /usr/share/gajim/src/common/xmpp/__init__.pyo
@@ -821,6 +1051,9 @@ Files included in the binary package:
   /usr/share/gajim/src/common/xmpp/browser.py
   /usr/share/gajim/src/common/xmpp/browser.pyc
   /usr/share/gajim/src/common/xmpp/browser.pyo
+  /usr/share/gajim/src/common/xmpp/c14n.py
+  /usr/share/gajim/src/common/xmpp/c14n.pyc
+  /usr/share/gajim/src/common/xmpp/c14n.pyo
   /usr/share/gajim/src/common/xmpp/client.py
   /usr/share/gajim/src/common/xmpp/client.pyc
   /usr/share/gajim/src/common/xmpp/client.pyo
@@ -893,6 +1126,12 @@ Files included in the binary package:
   /usr/share/gajim/src/common/zeroconf/zeroconf.py
   /usr/share/gajim/src/common/zeroconf/zeroconf.pyc
   /usr/share/gajim/src/common/zeroconf/zeroconf.pyo
+  /usr/share/gajim/src/common/zeroconf/zeroconf_avahi.py
+  /usr/share/gajim/src/common/zeroconf/zeroconf_avahi.pyc
+  /usr/share/gajim/src/common/zeroconf/zeroconf_avahi.pyo
+  /usr/share/gajim/src/common/zeroconf/zeroconf_bonjour.py
+  /usr/share/gajim/src/common/zeroconf/zeroconf_bonjour.pyc
+  /usr/share/gajim/src/common/zeroconf/zeroconf_bonjour.pyo
   /usr/share/gajim/src/config.py
   /usr/share/gajim/src/config.pyc
   /usr/share/gajim/src/config.pyo
@@ -908,6 +1147,9 @@ Files included in the binary package:
   /usr/share/gajim/src/disco.py
   /usr/share/gajim/src/disco.pyc
   /usr/share/gajim/src/disco.pyo
+  /usr/share/gajim/src/features_window.py
+  /usr/share/gajim/src/features_window.pyc
+  /usr/share/gajim/src/features_window.pyo
   /usr/share/gajim/src/filetransfers_window.py
   /usr/share/gajim/src/filetransfers_window.pyc
   /usr/share/gajim/src/filetransfers_window.pyo
@@ -953,6 +1195,9 @@ Files included in the binary package:
   /usr/share/gajim/src/music_track_listener.py
   /usr/share/gajim/src/music_track_listener.pyc
   /usr/share/gajim/src/music_track_listener.pyo
+  /usr/share/gajim/src/negotiation.py
+  /usr/share/gajim/src/negotiation.pyc
+  /usr/share/gajim/src/negotiation.pyo
   /usr/share/gajim/src/network_manager_listener.py
   /usr/share/gajim/src/network_manager_listener.pyc
   /usr/share/gajim/src/network_manager_listener.pyo
@@ -968,6 +1213,15 @@ Files included in the binary package:
   /usr/share/gajim/src/roster_window.py
   /usr/share/gajim/src/roster_window.pyc
   /usr/share/gajim/src/roster_window.pyo
+  /usr/share/gajim/src/search_window.py
+  /usr/share/gajim/src/search_window.pyc
+  /usr/share/gajim/src/search_window.pyo
+  /usr/share/gajim/src/secrets.py
+  /usr/share/gajim/src/secrets.pyc
+  /usr/share/gajim/src/secrets.pyo
+  /usr/share/gajim/src/session.py
+  /usr/share/gajim/src/session.pyc
+  /usr/share/gajim/src/session.pyo
   /usr/share/gajim/src/statusicon.py
   /usr/share/gajim/src/statusicon.pyc
   /usr/share/gajim/src/statusicon.pyo
@@ -983,11 +1237,9 @@ Files included in the binary package:
   /usr/share/locale/be/LC_MESSAGES/gajim.mo
   /usr/share/locale/be@latin/LC_MESSAGES/gajim.mo
   /usr/share/locale/bg/LC_MESSAGES/gajim.mo
-  /usr/share/locale/br/LC_MESSAGES/gajim.mo
   /usr/share/locale/cs/LC_MESSAGES/gajim.mo
   /usr/share/locale/da/LC_MESSAGES/gajim.mo
   /usr/share/locale/de/LC_MESSAGES/gajim.mo
-  /usr/share/locale/el/LC_MESSAGES/gajim.mo
   /usr/share/locale/en_GB/LC_MESSAGES/gajim.mo
   /usr/share/locale/eo/LC_MESSAGES/gajim.mo
   /usr/share/locale/es/LC_MESSAGES/gajim.mo
@@ -998,16 +1250,15 @@ Files included in the binary package:
   /usr/share/locale/it/LC_MESSAGES/gajim.mo
   /usr/share/locale/lt/LC_MESSAGES/gajim.mo
   /usr/share/locale/nb/LC_MESSAGES/gajim.mo
-  /usr/share/locale/nl/LC_MESSAGES/gajim.mo
   /usr/share/locale/no/LC_MESSAGES/gajim.mo
   /usr/share/locale/pl/LC_MESSAGES/gajim.mo
-  /usr/share/locale/pt/LC_MESSAGES/gajim.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/gajim.mo
   /usr/share/locale/ru/LC_MESSAGES/gajim.mo
   /usr/share/locale/sk/LC_MESSAGES/gajim.mo
   /usr/share/locale/sr/LC_MESSAGES/gajim.mo
   /usr/share/locale/sr@Latn/LC_MESSAGES/gajim.mo
   /usr/share/locale/sv/LC_MESSAGES/gajim.mo
+  /usr/share/locale/uk/LC_MESSAGES/gajim.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/gajim.mo
   /usr/share/man/man1/gajim-remote.1.gz
   /usr/share/man/man1/gajim.1.gz
@@ -1017,6 +1268,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.12.1-1 -----
+Version bump.
 
 ----- version 0.11.4-1 -----
 Version bump.

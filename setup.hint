@@ -1,5 +1,5 @@
 category: Net Gnome
-requires: cygwin libX11_6 libXss1 python python-dbus python-egg python-gconf2 python-gnome2 python-gnomekeyring python-gobject2 python-gtk2 python-gtkspell python-notify
+requires: cygwin libX11_6 libXss1 python python-dbus python-egg python-gconf2 python-gnome2 python-gnomekeyring python-gobject2 python-gtk2 python-gtkspell python-notify sox
 sdesc: "GNOME Jabber client"
 ldesc: "The goal of Gajim is to provide a full featured and easy to use 
 Jabber client. Gajim works nicely with GNOME, but does not require it to 
