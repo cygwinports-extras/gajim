@@ -1,0 +1,19 @@
+inherit gnome2 python
+
+CATEGORY="Gnome Net"
+SUMMARY="Gnome Jabber client"
+DESCRIPTION="The goal of Gajim is to provide a full featured and easy to use
+Jabber client. Gajim works nicely with GNOME, but does not require it to
+run."
+HOMEPAGE="http://gajim.org/"
+SRC_URI="http://gajim.org/downloads/${PV[1]}.${PV[2]}/${P}.tar.bz2"
+PATCH_URI="mirror://portage/net-im/${PN}/files/${P}-plugin.patch
+           mirror://portage/net-im/${PN}/files/${P}-SA48695-2.patch"
+# bind for nslookup, the rest for ctypes.util.find_library calls
+REQUIRES="bind libgtkspell-devel gettext libX11-devel libXss-devel"
+
+src_install() {
+	cd ${B}
+	cyginstall
+	python_optimize /usr/share/gajim/src
+}
