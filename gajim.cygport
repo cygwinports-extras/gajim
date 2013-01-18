@@ -2,16 +2,16 @@ inherit gnome2 python
 
 NAME="gajim"
 VERSION=0.15.2
-RELEASE=1
-CATEGORY="Gnome Net"
-SUMMARY="Gnome Jabber client"
+RELEASE=2
+CATEGORY="GNOME Net"
+SUMMARY="GNOME Jabber client"
 DESCRIPTION="The goal of Gajim is to provide a full featured and easy to use
 Jabber client. Gajim works nicely with GNOME, but does not require it to
 run."
 HOMEPAGE="http://gajim.org/"
 SRC_URI="http://gajim.org/downloads/${PV[1]}.${PV[2]}/${P}.tar.bz2"
-# bind for nslookup, the rest for ctypes.util.find_library calls
-REQUIRES="bind libgtkspell-devel gettext libX11-devel libXss-devel"
+# bind-utils for nslookup, the rest for ctypes.util.find_library calls
+REQUIRES="bind-utils libgtkspell-devel gettext libX11-devel libXss-devel"
 
 src_install() {
 	cd ${B}
